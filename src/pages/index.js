@@ -1,14 +1,35 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import Link from 'next/link';
 import { Inter } from '@next/font/google'
+
+// Swiper Module and CSS and Navigator
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+// Swiper Module and CSS and Navigator
 
 import Navbar from "./Components/Navbar"
 import Footer from './Components/Footer'
 import Container from './Components/Container'
+import { Autoplay, Navigation } from 'swiper';
 
 const inter = Inter({ subsets: ['latin'] })
 
+
+// export async function getServerSideProps () {
+//   const response = await fetch("http://localhost:3000/api/slider")
+//   const data = await response.json()
+
+//   return {
+//     props : {
+//       data
+//     }
+//   }
+// }
+
+
 export default function Home() {
+  
   return (
     <>
       <Head>
@@ -19,13 +40,890 @@ export default function Home() {
 
       <Navbar />
       
+        {/* Slider */}
+
+          <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+            <div className="carousel-inner">
+              <div className="carousel-item active">
+                <img src="/img/slider-hm4-1.webp" className="d-block w-100" alt="Slider1" />
+              </div>
+              <div className="carousel-item">
+                <img src="/img/slider-hm4-2.webp" className="d-block w-100" alt="Slider2" />
+              </div>
+              <div className="carousel-item">
+                <img src="/img/slider-hm4-3.webp" className="d-block w-100" alt="Slider3" />
+              </div>
+            </div>
+            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Previous</span>
+            </button>
+            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span className="carousel-control-next-icon" aria-hidden="true"></span>
+              <span className="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        {/* Slider */}
+
       <Container>
         
+        {/* News Carousel */}
 
+        <div className='mt-5 channel_category'>
+          <h2>News Channel</h2>
+        </div>
+
+        <Swiper
+          slidesPerView="auto"
+          spaceBetween={30}
+          allowTouchMove={true}
+          grabCursor={true}
+          loop={true}
+          breakpoints= {{
+            300: {
+              slidesPerView: 1,
+              spaceBetween: 10
+            },
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            },
+            1025: {
+              slidesPerView: 4,
+              spaceBetween: 30
+            },
+            1441: {
+              slidesPerView: 5,
+              spaceBetween: 30
+            }
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          speed={1000}
+          navigation={true}
+          modules={[Autoplay, Navigation]}
+          className="mySwiper"
+
+        >
+        
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          
+          
+
+        </Swiper>
+   
+        {/* News Carousel */}
+        
+        {/* Sports Carousel */}
+
+        <div className='mt-5 channel_category'>
+          <h2>Sports Channel</h2>
+        </div>
+
+        <Swiper
+          slidesPerView="auto"
+          spaceBetween={30}
+          allowTouchMove={true}
+          grabCursor={true}
+          loop={true}
+          breakpoints= {{
+            300: {
+              slidesPerView: 1,
+              spaceBetween: 10
+            },
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            },
+            1025: {
+              slidesPerView: 4,
+              spaceBetween: 30
+            },
+            1441: {
+              slidesPerView: 5,
+              spaceBetween: 30
+            }
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          speed={1000}
+          navigation={true}
+          modules={[Autoplay, Navigation]}
+          className="mySwiper"
+
+        >
+        
+          <SwiperSlide>
+          <Link href="">
+            <img src='/img/PC.webp' alt='' />
+          </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          
+
+        </Swiper>
+   
+        {/* Sports Carousel */}
+
+        {/* Bangla Carousel */}
+
+        <div className='mt-5 channel_category'>
+          <h2>Bangla Entertainment Channel</h2>
+        </div>
+
+        <Swiper
+          slidesPerView="auto"
+          spaceBetween={30}
+          allowTouchMove={true}
+          grabCursor={true}
+          loop={true}
+          breakpoints= {{
+            300: {
+              slidesPerView: 1,
+              spaceBetween: 10
+            },
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            },
+            1025: {
+              slidesPerView: 4,
+              spaceBetween: 30
+            },
+            1441: {
+              slidesPerView: 5,
+              spaceBetween: 30
+            }
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          speed={1000}
+          navigation={true}
+          modules={[Autoplay, Navigation]}
+          className="mySwiper"
+
+        >
+        
+          <SwiperSlide>
+          <Link href="">
+            <img src='/img/PC.webp' alt='' />
+          </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          
+
+        </Swiper>
+   
+        {/* Bangla Carousel */}
+
+        {/* English Carousel */}
+
+        <div className='mt-5 channel_category'>
+          <h2>English Entertainment Channel</h2>
+        </div>
+
+        <Swiper
+          slidesPerView="auto"
+          spaceBetween={30}
+          allowTouchMove={true}
+          grabCursor={true}
+          loop={true}
+          breakpoints= {{
+            300: {
+              slidesPerView: 1,
+              spaceBetween: 10
+            },
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            },
+            1025: {
+              slidesPerView: 4,
+              spaceBetween: 30
+            },
+            1441: {
+              slidesPerView: 5,
+              spaceBetween: 30
+            }
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          speed={1000}
+          navigation={true}
+          modules={[Autoplay, Navigation]}
+          className="mySwiper"
+
+        >
+        
+          <SwiperSlide>
+          <Link href="">
+            <img src='/img/PC.webp' alt='' />
+          </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          
+
+        </Swiper>
+   
+        {/* English Carousel */}
+
+        {/* Hindi Carousel */}
+
+        <div className='mt-5 channel_category'>
+          <h2>Hindi Entertainment Channel</h2>
+        </div>
+
+        <Swiper
+          slidesPerView="auto"
+          spaceBetween={30}
+          allowTouchMove={true}
+          grabCursor={true}
+          loop={true}
+          breakpoints= {{
+            300: {
+              slidesPerView: 1,
+              spaceBetween: 10
+            },
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            },
+            1025: {
+              slidesPerView: 4,
+              spaceBetween: 30
+            },
+            1441: {
+              slidesPerView: 5,
+              spaceBetween: 30
+            }
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          speed={1000}
+          navigation={true}
+          modules={[Autoplay, Navigation]}
+          className="mySwiper"
+
+        >
+        
+          <SwiperSlide>
+          <Link href="">
+            <img src='/img/PC.webp' alt='' />
+          </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          
+
+        </Swiper>
+   
+        {/* Hindi Carousel */}
+  
+        {/* Documentory Carousel */}
+
+        <div className='mt-5 channel_category'>
+          <h2>Documentary Channel</h2>
+        </div>
+
+        <Swiper
+          slidesPerView="auto"
+          spaceBetween={30}
+          allowTouchMove={true}
+          grabCursor={true}
+          loop={true}
+          breakpoints= {{
+            300: {
+              slidesPerView: 1,
+              spaceBetween: 10
+            },
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            },
+            1025: {
+              slidesPerView: 4,
+              spaceBetween: 30
+            },
+            1441: {
+              slidesPerView: 5,
+              spaceBetween: 30
+            }
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          speed={1000}
+          navigation={true}
+          modules={[Autoplay, Navigation]}
+          className="mySwiper"
+
+        >
+        
+          <SwiperSlide>
+          <Link href="">
+            <img src='/img/PC.webp' alt='' />
+          </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          
+
+        </Swiper>
+   
+        {/* Documentory Carousel */}
+
+        {/* Cartoon Carousel */}
+
+        <div className='mt-5 channel_category'>
+          <h2>Cartoon Channel</h2>
+        </div>
+
+        <Swiper
+          slidesPerView="auto"
+          spaceBetween={30}
+          allowTouchMove={true}
+          grabCursor={true}
+          loop={true}
+          breakpoints= {{
+            300: {
+              slidesPerView: 1,
+              spaceBetween: 10
+            },
+            480: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            640: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            },
+            1025: {
+              slidesPerView: 4,
+              spaceBetween: 30
+            },
+            1441: {
+              slidesPerView: 5,
+              spaceBetween: 30
+            }
+          }}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          speed={1000}
+          navigation={true}
+          modules={[Autoplay, Navigation]}
+          className="mySwiper"
+
+        >
+        
+          <SwiperSlide>
+          <Link href="">
+            <img src='/img/PC.webp' alt='' />
+          </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+          </SwiperSlide>
+          
+
+        </Swiper>
+   
+        {/* Cartoon Carousel */}
+
+
+        {/* Sister Concern */}
+        <div id='our_sister_concern'>
+          <div className='mt-5 text-center'>
+            <h2>Our Sister Concern</h2>
+          </div>
+
+          <Swiper
+            slidesPerView="auto"
+            spaceBetween={30}
+            allowTouchMove={true}
+            grabCursor={true}
+            loop={true}
+            breakpoints= {{
+              300: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              480: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              640: {
+                slidesPerView: 3,
+                spaceBetween: 30
+              },
+              1025: {
+                slidesPerView: 4,
+                spaceBetween: 30
+              },
+              1441: {
+                slidesPerView: 5,
+                spaceBetween: 30
+              }
+            }}
+            autoplay={{
+              delay: 1000,
+              disableOnInteraction: false,
+            }}
+            speed={1000}
+            navigation={false}
+            modules={[Autoplay, Navigation]}
+            className="mySwiper"
+
+          >
+          
+            <SwiperSlide>
+            <Link href="">
+              <img src='/img/PC.webp' alt='' />
+            </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link href="">
+                <img src='/img/PC.webp' alt='' />
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link href="">
+                <img src='/img/PC.webp' alt='' />
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link href="">
+                <img src='/img/PC.webp' alt='' />
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link href="">
+                <img src='/img/PC.webp' alt='' />
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link href="">
+                <img src='/img/PC.webp' alt='' />
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link href="">
+                <img src='/img/PC.webp' alt='' />
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link href="">
+                <img src='/img/PC.webp' alt='' />
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link href="">
+                <img src='/img/PC.webp' alt='' />
+              </Link>
+            </SwiperSlide>
+            <SwiperSlide>
+              <Link href="">
+                <img src='/img/PC.webp' alt='' />
+              </Link>
+            </SwiperSlide>
+            
+
+          </Swiper>
+        </div>
+   
+        {/* Sister Concern */}
+
+
+        {/* Get in Touch */}
+
+          <div className='my-5'>
+            <h2 className='text-center my-5'>GET IN TOUCH</h2>
+            <div className='row d-flex align-items-center'>
+              <div className='col-lg-2'></div>
+              <div className='col-lg-4'>
+                  <h3>Contact Details</h3>
+                  <p>Find Us In Plant</p>
+                  <ul id='touch_info'>
+                      <li>Nigar Plaza, Flat # 6/A, Level 7, Rd# 02, Sec# 03, Rajlokkhi Uttara Dhaka</li>
+                      <li>Phone: +880961-326-0655, +880174-326-0655</li>
+                      <li>Skype: dmsolution2015</li>
+                      <li>Email: info@digitalmarketingbd.com</li>
+                  </ul>
+              </div>
+              <div className='col-lg-4'>
+                  <div id='touch_form'>
+                    <form action="">
+                      <input type="text" className='form-control form-control-lg' placeholder='Name' />
+                      <input type="email" className='form-control form-control-lg mt-3' placeholder='Email' />
+                      <input type="text" className='form-control form-control-lg mt-3' placeholder='Subject' />
+                      <textarea name="" id="" cols="30" rows="5" className='form-control form-control-lg mt-3' placeholder='Message'></textarea>
+
+                      <button className='btn btn-lg mt-4'>Submit</button>
+                    </form>
+                  </div>
+              </div>
+              <div className='col-lg-2'></div>
+            </div>
+          </div>
+
+        {/* Get in Touch */}
 
       </Container>
 
       <Footer />
+
+      
 
     </>
   )

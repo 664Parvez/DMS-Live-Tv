@@ -23,6 +23,7 @@ const Navbar = () => {
                     <div className="hamber_icon">
                         <img id="hambar" src="/img/hambar.png" alt="" />
                     </div>
+
             </div>
         </>
     )
