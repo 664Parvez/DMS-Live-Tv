@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Head from "next/head"
 
+import PageTitle from "./Components/Page_title"
 import Navbar from "./Components/Navbar"
 import Footer from "./Components/Footer" 
 
@@ -19,6 +20,99 @@ const contactUs = () => {
             <Navbar />
 
             <Container>
+                <PageTitle title="Contact Us" brad="Contact Us" />
+
+                <div id="contact_us_page">
+                    <div className="text-center">
+                        <img src="/img/DMS-LIVE-TV2.png" alt="" />
+                    </div>
+                    <p className="text-center">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laqua. Ut enim ad minim veniam, quis</p>
+
+                    <div className="row">
+                        <div className="col-lg-2"></div>
+                        <div className="col-lg-8">
+                            <form action="">
+                                <div className="row">
+                                    <div className="col-lg-6">
+                                        <label htmlFor="first_name" className="mt-4">First Name</label>
+                                        <input type="text" id="first_name" className="form-control form-control-lg" placeholder="First Name" />
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <label htmlFor="last_name" className="mt-4">Last Name</label>
+                                        <input type="text" id="last_name" className="form-control form-control-lg" placeholder="Last Name" />
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <label htmlFor="email" className="mt-4">Email</label>
+                                        <input type="email" id="email" className="form-control form-control-lg" placeholder="Email" />
+                                    </div>
+                                    <div className="col-lg-6">
+                                        <label htmlFor="subject" className="mt-4">Subject</label>
+                                        <input type="text" id="subject" className="form-control form-control-lg" placeholder="Subject" />
+                                    </div>
+
+                                    <div className="col-lg-12">
+                                        <label htmlFor="message" className="mt-4">Message</label>
+                                        <textarea name="" id="message" className="form-control form-control-lg" placeholder="Message" cols="30" rows="10"></textarea>
+                                    </div>
+
+                                    <div className="text-center mt-5">
+                                        <button className="btn btn-lg">Send Message</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div className="col-lg-2"></div>
+                    </div>
+                </div>
+
+                <div id="contact_info">
+                    <div className="row">
+                        <div className="col-lg-3 col-md-6">
+                            <div className="row d-flex align-items-center">
+                                <div className="col-3 text-center">
+                                    <i className="fa-solid fa-house"></i>
+                                </div>
+                                <div className="col-9">
+                                    <p className="mb-0">Home #02 Hangla pur, Dhaka , Bangladesh</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6">
+                            <div className="row d-flex align-items-center">
+                                <div className="col-3 text-center">
+                                    <i className="fa-solid fa-phone"></i>
+                                </div>
+                                <div className="col-9">
+                                    <p className="mb-0">+880 174-326-0655</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6">
+                            <div className="row d-flex align-items-center">
+                                <div className="col-3 text-center">
+                                    <i className="fa-solid fa-envelope"></i>
+                                </div>
+                                <div className="col-9">
+                                    <p className="mb-0">example@e-mail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-lg-3 col-md-6">
+                            <div className="row d-flex align-items-center">
+                                <div className="col-3 text-center">
+                                    <i className="fa-solid fa-earth-americas"></i>
+                                </div>
+                                <div className="col-9">
+                                    <p className="mb-0">www.dmslivetv.com</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="map_section">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d7296.913156419769!2d90.4016921!3d23.8734232!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3755c79ce4c560ed%3A0xed6ac82bbf2ae6a9!2sDigital%20Marketing%20Solution%20(Pvt.)%20Ltd.%20House%20building%20Flat%20%23%206%2FA%2C%20Level%207%2C%20House%2010%2C%20Road%23%2002%2C%20Sec%23%2006%20Uttara%20Dhaka%201230%2C%20Bangladesh!3m2!1d23.873423199999998!2d90.40169209999999!5e0!3m2!1sen!2sbd!4v1675142969895!5m2!1sen!2sbd" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
             </Container>
 
