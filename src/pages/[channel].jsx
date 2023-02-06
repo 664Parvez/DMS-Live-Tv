@@ -1,12 +1,19 @@
 import Head from "next/head"
 import Link from "next/link"
 
+import { useRouter } from "next/router"
+
 import Navbar from "./Components/Navbar"
 import Footer from "./Components/Footer"
 import Container from "./Components/Container"
 import Channel from "./Components/channels"
 
 const SinglePage = () => {
+
+    let router = useRouter()
+    let {channel} = router.query
+
+
     return (
         <>
             <Head>
@@ -20,6 +27,7 @@ const SinglePage = () => {
             <Container>
                 
                 <div id="single_first_section">
+                    {/* <h1>{channel}</h1> */}
                     <div className="row d-flex align-items-center">
                         <div className="col-lg-8">
                             <iframe src="https://www.youtube.com/embed/sUKwTVAc0Vo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
