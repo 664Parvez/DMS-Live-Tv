@@ -3,15 +3,28 @@ import Link from "next/link"
 
 import { useRouter } from "next/router"
 
-import Navbar from "./Components/Navbar"
-import Footer from "./Components/Footer"
-import Container from "./Components/Container"
-import Channel from "./Components/channels"
+import Navbar from "../Components/Navbar"
+import Footer from "../Components/Footer"
+import Container from "../Components/Container"
+import Channel from "../Components/channels"
 
-const SinglePage = () => {
 
-    let router = useRouter()
-    let {channel} = router.query
+export async function getServerSideProps () {
+    const response = await fetch("http://localhost:3000/api/channel")
+    const data = await response.json()
+  
+    return {
+      props : {
+        data
+      }
+    }
+}
+
+const single = ({data}) => {
+
+    
+    let router = useRouter().query
+    console.log(router)
 
 
     return (
@@ -25,9 +38,17 @@ const SinglePage = () => {
             <Navbar />
 
             <Container>
+
+                {
+                    data.map((items) => {
+                        return (
+                            router.signle === items.channel ?    
+                            <img src={items.img} alt="" /> : ""
+                        )
+                    })
+                }
                 
                 <div id="single_first_section">
-                    {/* <h1>{channel}</h1> */}
                     <div className="row d-flex align-items-center">
                         <div className="col-lg-8">
                             <iframe src="https://www.youtube.com/embed/sUKwTVAc0Vo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -47,4 +68,4 @@ const SinglePage = () => {
     )
 }
 
-export default SinglePage
+export default single

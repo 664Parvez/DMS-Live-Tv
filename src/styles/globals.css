@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@500&display=swap');
 
+html,body {
+  overflow-x: hidden;
+}
+
 body{
   font-family: 'Encode Sans', sans-serif;
   background-color: #f1f1f1;
@@ -105,6 +109,45 @@ a{
 }
 
 /* Responsive Navbar */
+
+
+/* Background Image */
+#background_img{
+  background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("/img/home-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding-top: 10%;
+}
+#background_img h1{
+  color: #f1f1f1;
+  font-size: 100px;
+}
+#background_img h3{
+  color: #f1f1f1;
+}
+#background_img .btn{
+  background-color: #f1f1f1;
+  padding: 20px 40px;
+}
+@media only screen and (min-width: 280px) and (max-width: 428px) {
+  #background_img{
+    padding-top: 50%;
+  }
+  #background_img h1{
+    font-size: 50px;
+  }
+  #background_img .btn{
+    padding: 10px 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 834px) {
+  #background_img{
+    padding-top: 30%;
+  }
+}
+/* Background Image */
 
 .channel_category{
   margin-left: 30px;
