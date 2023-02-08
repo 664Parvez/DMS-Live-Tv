@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Head from "next/head"
+import Image from "next/image"
 
 import PageTitle from "../../Components/Page_title"
 import Navbar from "../../Components/Navbar"
@@ -24,7 +25,7 @@ const contactUs = () => {
 
                 <div id="contact_us_page">
                     <div className="text-center">
-                        <img src="/img/DMS-LIVE-TV2.png" alt="" />
+                        <Image height="100" width="300" src="/img/DMS-LIVE-TV2.png" alt="" />
                     </div>
                     <p className="text-center">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut laqua. Ut enim ad minim veniam, quis</p>
 
@@ -111,7 +112,7 @@ const contactUs = () => {
                 </div>
 
                 <div id="map_section">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d7296.913156419769!2d90.4016921!3d23.8734232!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3755c79ce4c560ed%3A0xed6ac82bbf2ae6a9!2sDigital%20Marketing%20Solution%20(Pvt.)%20Ltd.%20House%20building%20Flat%20%23%206%2FA%2C%20Level%207%2C%20House%2010%2C%20Road%23%2002%2C%20Sec%23%2006%20Uttara%20Dhaka%201230%2C%20Bangladesh!3m2!1d23.873423199999998!2d90.40169209999999!5e0!3m2!1sen!2sbd!4v1675142969895!5m2!1sen!2sbd" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d7296.913156419769!2d90.4016921!3d23.8734232!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x3755c79ce4c560ed%3A0xed6ac82bbf2ae6a9!2sDigital%20Marketing%20Solution%20(Pvt.)%20Ltd.%20House%20building%20Flat%20%23%206%2FA%2C%20Level%207%2C%20House%2010%2C%20Road%23%2002%2C%20Sec%23%2006%20Uttara%20Dhaka%201230%2C%20Bangladesh!3m2!1d23.873423199999998!2d90.40169209999999!5e0!3m2!1sen!2sbd!4v1675142969895!5m2!1sen!2sbd" width="600" height="450" style={{border:0}}  frameborder="0" allowfullscreen="true" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
             </Container>

@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Head from "next/head"
+import Image from "next/image"
 
 import PageTitle from "../../Components/Page_title"
 import Container from "../../Components/Container"
@@ -27,7 +28,7 @@ const Register = () => {
                         <div className="col-lg-3"></div>
                         <div className="col-lg-6">
                             <div className="text-center my-4">
-                                <img src="/img/DMS-LIVE-TV2.png" alt="" />
+                                <Image height="100" width="300" src="/img/DMS-LIVE-TV2.png" alt="" />
                             </div>
 
                             <div id="signup_form_div">

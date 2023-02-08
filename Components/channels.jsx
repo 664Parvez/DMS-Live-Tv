@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Head from 'next/head'
+import Image from 'next/image'
 import React, {useState, useEffect} from "react"
 
 // Swiper Module and CSS and Navigator
@@ -99,7 +100,7 @@ const Channel = ({data}) => {
                                     items.channel === "news" ? 
                                         <SwiperSlide key={index + 1}>
                                             <Link href={`/channel/${items.slug}`}>
-                                                <img src={items.img} alt='' />
+                                                <Image width="300" height="300" src={items.img} alt='' />
                                             </Link>
                                         </SwiperSlide> : ""
                                     }
@@ -163,7 +164,7 @@ const Channel = ({data}) => {
                                     items.channel === "sports" ? 
                                         <SwiperSlide key={index + 1}>
                                             <Link href={`/channel/${items.slug}`}>
-                                                <img src={items.img} alt='' />
+                                                <Image width="300" height="300" src={items.img} alt='' />
                                             </Link>
                                         </SwiperSlide> : ""
                                     }
@@ -226,7 +227,7 @@ const Channel = ({data}) => {
                                     items.channel === "bangla" ? 
                                         <SwiperSlide key={index + 1}>
                                             <Link href={`/channel/${items.slug}`}>
-                                                <img src={items.img} alt='' />
+                                                <Image width="300" height="300" src={items.img} alt='' />
                                             </Link>
                                         </SwiperSlide> : ""
                                     }
@@ -288,7 +289,7 @@ const Channel = ({data}) => {
                                     items.channel === "sports" ? 
                                         <SwiperSlide key={index + 1}>
                                             <Link href={`/channel/${items.slug}`}>
-                                                <img src={items.img} alt='' />
+                                                <Image width="300" height="300" src={items.img} alt='' />
                                             </Link>
                                         </SwiperSlide> : ""
                                     }
@@ -350,7 +351,7 @@ const Channel = ({data}) => {
                                     items.channel === "english" ? 
                                         <SwiperSlide key={index + 1}>
                                             <Link href={`/channel/${items.slug}`}>
-                                                <img src={items.img} alt='' />
+                                                <Image width="300" height="300" src={items.img} alt='' />
                                             </Link>
                                         </SwiperSlide> : ""
                                     }
@@ -412,7 +413,7 @@ const Channel = ({data}) => {
                                     items.channel === "sports" ? 
                                         <SwiperSlide key={index + 1}>
                                             <Link href={`/channel/${items.slug}`}>
-                                                <img src={items.img} alt='' />
+                                                <Image width="300" height="300" src={items.img} alt='' />
                                             </Link>
                                         </SwiperSlide> : ""
                                     }
@@ -474,7 +475,7 @@ const Channel = ({data}) => {
                                     items.channel === "bangla" ? 
                                         <SwiperSlide key={index + 1}>
                                             <Link href={`/channel/${items.slug}`}>
-                                                <img src={items.img} alt='' />
+                                                <Image width="300" height="300" src={items.img} alt='' />
                                             </Link>
                                         </SwiperSlide> : ""
                                     }

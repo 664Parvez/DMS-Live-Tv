@@ -1,5 +1,6 @@
 import Head from "next/head"
 import Link from "next/link"
+import Image from "next/image"
 import Container from "../../Components/Container"
 
 import Navbar from "../../Components/Navbar"
@@ -28,7 +29,7 @@ const Login = () => {
                         <div className="col-lg-3"></div>
                         <div className="col-lg-6">
                             <div className="text-center my-4">
-                                <img src="/img/DMS-LIVE-TV2.png" alt="" />
+                                <Image height="100" width="300" src="/img/DMS-LIVE-TV2.png" alt="" />
                             </div>
                             <div id="login_form_div">
                                 <form action="">

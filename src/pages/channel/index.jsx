@@ -1,4 +1,4 @@
-
+import Image from 'next/image'
 import Link from "next/link"
 import Head from 'next/head'
 
@@ -44,13 +44,13 @@ const channel = ({data}) => {
             <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
             <div className="carousel-inner">
               <div className="carousel-item active">
-                <img src="/img/slider-hm4-1.webp" className="d-block w-100" alt="Slider1" />
+                <Image height="550" width="1500" layout="intrinsic" src="/img/slider-hm4-1.webp" className="d-block w-100" alt="Slider1" />
               </div>
               <div className="carousel-item">
-                <img src="/img/slider-hm4-2.webp" className="d-block w-100" alt="Slider2" />
+                <Image height="550" width="1500" layout="intrinsic" src="/img/slider-hm4-2.webp" className="d-block w-100" alt="Slider2" />
               </div>
               <div className="carousel-item">
-                <img src="/img/slider-hm4-3.webp" className="d-block w-100" alt="Slider3" />
+                <Image height="550" width="1500" layout="intrinsic" src="/img/slider-hm4-3.webp" className="d-block w-100" alt="Slider3" />
               </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -119,7 +119,7 @@ const channel = ({data}) => {
                   items.channel === "news" ? 
                         <SwiperSlide key={index + 1}>
                           <Link href={`/channel/${items.slug}`}>
-                            <img src={items.img} alt='' />
+                            <Image height="300" width="300" src={items.img} alt='' />
                           </Link>
                         </SwiperSlide> : ""
                 }
@@ -184,7 +184,7 @@ const channel = ({data}) => {
                     items.channel === "sports" ? 
                       <SwiperSlide key={index + 1}>
                       <Link href={`/channel/${items.slug}`}>
-                        <img src={items.img} alt='' />
+                        <Image height="300" width="300" src={items.img} alt='' />
                       </Link>
                       </SwiperSlide> : ""
                   }
@@ -249,7 +249,7 @@ const channel = ({data}) => {
                     items.channel === "bangla" ? 
                       <SwiperSlide key={index + 1}>
                       <Link href={`/channel/${items.slug}`}>
-                        <img src={items.img} alt='' />
+                        <Image height="300" width="300" src={items.img} alt='' />
                       </Link>
                       </SwiperSlide> : ""
                   }
@@ -314,7 +314,7 @@ const channel = ({data}) => {
                     items.channel === "english" ? 
                       <SwiperSlide key={index + 1}>
                       <Link href={`/channel/${items.slug}`}>
-                        <img src={items.img} alt='' />
+                        <Image height="300" width="300" src={items.img} alt='' />
                       </Link>
                       </SwiperSlide> : ""
                   }
@@ -381,7 +381,7 @@ const channel = ({data}) => {
                     items.channel === "news" ? 
                       <SwiperSlide key={index + 1}>
                       <Link href={`/channel/${items.slug}`}>
-                        <img src={items.img} alt='' />
+                        <Image height="300" width="300" src={items.img} alt='' />
                       </Link>
                       </SwiperSlide> : ""
                   }
@@ -447,7 +447,7 @@ const channel = ({data}) => {
                     items.channel === "english" ? 
                       <SwiperSlide key={index + 1}>
                       <Link href={`/channel/${items.slug}`}>
-                        <img src={items.img} alt='' />
+                        <Image height="300" width="300" src={items.img} alt='' />
                       </Link>
                       </SwiperSlide> : ""
                   }
@@ -514,7 +514,7 @@ const channel = ({data}) => {
                     items.channel === "bangla" ? 
                       <SwiperSlide key={index + 1}>
                       <Link href={`/channel/${items.slug}`}>
-                        <img src={items.img} alt='' />
+                        <Image height="300" width="300" src={items.img} alt='' />
                       </Link>
                       </SwiperSlide> : ""
                   }
@@ -575,63 +575,62 @@ const channel = ({data}) => {
           
             <SwiperSlide>
             <Link href="">
-              <img src='/img/Sister/1.jpg' alt='' />
+              <Image height="300" width="300" src='/img/Sister/1.jpg' alt='' />
             </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link href="">
-                <img src='/img/Sister/2.jpg' alt='' />
+                <Image height="300" width="300" src='/img/Sister/2.jpg' alt='' />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link href="">
-                <img src='/img/Sister/3.jpg' alt='' />
+                <Image height="300" width="300" src='/img/Sister/3.jpg' alt='' />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link href="">
-                <img src='/img/Sister/4.jpg' alt='' />
+                <Image height="300" width="300" src='/img/Sister/4.jpg' alt='' />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link href="">
-                <img src='/img/Sister/5.jpg' alt='' />
+                <Image height="300" width="300" src='/img/Sister/5.jpg' alt='' />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link href="">
-                <img src='/img/Sister/6.jpg' alt='' />
+                <Image height="300" width="300" src='/img/Sister/6.jpg' alt='' />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link href="">
-                <img src='/img/Sister/7.jpg' alt='' />
+                <Image height="300" width="300" src='/img/Sister/7.jpg' alt='' />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link href="">
-                <img src='/img/Sister/8.jpg' alt='' />
+                <Image height="300" width="300" src='/img/Sister/8.jpg' alt='' />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link href="">
-                <img src='/img/Sister/9.jpg' alt='' />
+                <Image height="300" width="300" src='/img/Sister/9.jpg' alt='' />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link href="">
-                <img src='/img/Sister/10.jpg' alt='' />
+                <Image height="300" width="300" src='/img/Sister/10.jpg' alt='' />
               </Link>
             </SwiperSlide>
             
 
           </Swiper>
+
         </div>
    
       
 
-
-        
 
           <div className='my-5'>
             <h2 className='text-center my-5'>GET IN TOUCH</h2>

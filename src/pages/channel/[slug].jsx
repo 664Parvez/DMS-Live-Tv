@@ -22,10 +22,7 @@ export async function getServerSideProps () {
 
 const single = ({data}) => {
 
-    
     let router = useRouter().query
-    console.log(router)
-
 
     return (
         <>
@@ -43,7 +40,8 @@ const single = ({data}) => {
                     data.map((items) => {
                         return (
                             router.signle === items.channel ?    
-                            <img src={items.img} alt="" /> : ""
+                            <h1>Hello</h1> : ""
+                            // <img src={items.img} alt="" />
                         )
                     })
                 }

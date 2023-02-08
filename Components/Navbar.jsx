@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 import Link from "next/link"
+import Image from "next/image"
 
 const Navbar = () => {
 
@@ -15,7 +16,7 @@ const Navbar = () => {
                 
                     <div className="text-start">
                         <Link href="/">
-                            <img id="Logo" src="/img/DMS-LIVE-TV.png" alt="" />
+                            <Image width="300" height="300" id="Logo" src="/img/DMS-LIVE-TV.png" alt="" />
                         </Link>
                     </div>
                     <div className="nav-items">
@@ -29,7 +30,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="hamber_icon">
-                        <img id="hambar" onClick={responsive_nav} src="/img/hambar.png" alt="" />
+                        <Image width="200" height="200" id="hambar" onClick={responsive_nav} src="/img/hambar.png" alt="" />
                     </div>
 
 

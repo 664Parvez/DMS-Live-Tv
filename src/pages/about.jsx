@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Head from "next/head"
+import Image from "next/image"
 
 import Navbar from "../../Components/Navbar"
 import Footer from "../../Components/Footer"
@@ -33,20 +34,20 @@ const about = () => {
                             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam facere illo hic velit sunt laborum nisi asperiores quibusdam eligendi eum. Iure quod nostrum aspernatur quidem error voluptas tempore nobis deserunt, neque ex dicta doloremque. Labore pariatur quas cupiditate laboriosam dolor!</p>
                         </div>
                         <div className="col-lg-4 text-center">
-                            <img src="/img/PC.webp" alt="" />
+                            <Image width="400" height="500" layout="responsive" src="/img/PC.webp" alt="" />
                         </div>
                     </div>
                 </div>
 
                 <div id="about_second">
-                    <h2 className="text-center">Why You’ll Love DMS Live TV? <br />
+                    <h2 className="text-center">Why You will Love DMS Live TV? <br />
                     The Reasons Why Netfix Is The Best.
                     </h2>
                     <div className="row">
                         <div className="col-lg-3 col-md-6">
                             <div className="card mt-4 text-center">
                                 <h3>Flexible Theme Options</h3>
-                                <p>We have provide various theme options it's easy to customize.</p>
+                                <p>We have provide various theme options it is easy to customize.</p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6">
@@ -58,7 +59,7 @@ const about = () => {
                         <div className="col-lg-3 col-md-6">
                             <div className="card mt-4 text-center">
                                 <h3>One Click Demo Import</h3>
-                                <p>Powerful one click installer it's quick, easy and rocket fast!</p>
+                                <p>Powerful one click installer it is quick, easy and rocket fast!</p>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6">
@@ -73,7 +74,7 @@ const about = () => {
                 <div id="about_third">
                     <div className="row">
                         <div className="col-lg-6 text-sm-center">
-                            <img src="/img/mobile.webp" alt="" />
+                            <Image width="400" height="400" layout="intrinsic" src="/img/mobile.webp" alt="" />
                         </div>
                         <div className="col-lg-6">
                             <h2>Retina Ready Mobile Optimized</h2>

@@ -5,7 +5,7 @@ const page_title = (props) => {
         <>
             <div id="page_title">
                 <h1 className="text-center">{props.title}</h1>
-                <p className="mb-0"><Link href="/">Home</Link> / {props.brad}</p>
+                <p className="mb-0"><Link href="/channel">Home</Link> / {props.brad}</p>
             </div>
         </>
     )

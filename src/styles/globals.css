@@ -480,6 +480,10 @@ a{
 #forget_login_link{
   color: #34495E;
 }
+#forgetPassword_form_div .btn{
+  background-color: #34495E;
+  color: #f1f1f1;
+}
 /* Forget Password */
 
 

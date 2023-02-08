@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Head from "next/head"
+import Image from "next/image"
 
 import Navbar from "../../Components/Navbar"
 import Footer from "../../Components/Footer"
@@ -27,7 +28,7 @@ const forgetPassword = () => {
                         <div className="col-lg-3"></div>
                         <div className="col-lg-6">
                             <div className="text-center my-5">
-                                <img src="/img/DMS-LIVE-TV2.png" alt="" />
+                                <Image height="100" width="300" src="/img/DMS-LIVE-TV2.png" alt="" />
                             </div>
 
                             <div id="forgetPassword_form_div">
@@ -35,6 +36,8 @@ const forgetPassword = () => {
 
                                     <label htmlFor="email" className="mt-4">Email</label>
                                     <input type="text" className="form-control form-control-lg" id="email" placeholder="Email" />
+
+                                    <button type="submit" className="btn btn-lg mt-4">New Password</button>
     
                                 </form>
                                 
