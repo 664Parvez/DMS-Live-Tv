@@ -252,5 +252,77 @@ export default function news (req, res) {
             "slug" : "bangla-tv",
             "channel" : "bangla"
         },
+
+        {
+            "img" : "/img/channel-logo/English/1.webp",
+            "slug" : "movies-now",
+            "channel" : "english"
+        },
+        {
+            "img" : "/img/channel-logo/English/2.webp",
+            "slug" : "sony-pix",
+            "channel" : "english"
+        },
+        {
+            "img" : "/img/channel-logo/English/3.webp",
+            "slug" : "star-movies",
+            "channel" : "english"
+        },
+        {
+            "img" : "/img/channel-logo/English/4.webp",
+            "slug" : "star-movies-action",
+            "channel" : "english"
+        },
+        {
+            "img" : "/img/channel-logo/English/6.webp",
+            "slug" : "tlc",
+            "channel" : "english"
+        },
+        {
+            "img" : "/img/channel-logo/English/7.webp",
+            "slug" : "wb",
+            "channel" : "english"
+        },
+        {
+            "img" : "/img/channel-logo/English/8.webp",
+            "slug" : "z-studio",
+            "channel" : "english"
+        },
+        {
+            "img" : "/img/channel-logo/English/9.webp",
+            "slug" : "&-flix",
+            "channel" : "english"
+        },
+        {
+            "img" : "/img/channel-logo/English/10.webp",
+            "slug" : "axn",
+            "channel" : "english"
+        },
+        {
+            "img" : "/img/channel-logo/English/11.webp",
+            "slug" : "english-club-tv",
+            "channel" : "english"
+        },
+        {
+            "img" : "/img/channel-logo/English/12.webp",
+            "slug" : "fox-movie-channel",
+            "channel" : "english"
+        },
+        {
+            "img" : "/img/channel-logo/English/13.webp",
+            "slug" : "hbo",
+            "channel" : "english"
+        },
+        {
+            "img" : "/img/channel-logo/English/14.webp",
+            "slug" : "movies-now-2",
+            "channel" : "english"
+        },
+        // {
+        //     "img" : "/img/channel-logo/English/1.webp",
+        //     "slug" : "bangla-tv",
+        //     "channel" : "english"
+        // },
+
     ])
 }

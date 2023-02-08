@@ -1,3 +1,4 @@
+
 import Link from "next/link"
 import Head from 'next/head'
 
@@ -7,9 +8,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 // Swiper Module and CSS and Navigator
 
-import Navbar from "../Components/Navbar"
-import Footer from '../Components/Footer'
-import Container from '../Components/Container'
+
+import Navbar from "../../../Components/Navbar"
+import Footer from '../../../Components/Footer'
+import Container from '../../../Components/Container'
 // import MainPage from "./channel/index"
 import { Autoplay, Navigation } from 'swiper';
 
@@ -27,6 +29,7 @@ export async function getServerSideProps () {
 
 
 const channel = ({data}) => {
+
     return (
         <>
             <Head>                                                                                                 
@@ -109,12 +112,12 @@ const channel = ({data}) => {
         >
         
         {
-          data.map((items) => {
+          data.map((items, index = 0) => {
             return (
               <>
                 {
                   items.channel === "news" ? 
-                        <SwiperSlide>
+                        <SwiperSlide key={index + 1}>
                           <Link href={`/channel/${items.slug}`}>
                             <img src={items.img} alt='' />
                           </Link>
@@ -174,13 +177,13 @@ const channel = ({data}) => {
         >
 
           {
-            data.map((items) => {
+            data.map((items, index = 0) => {
               return (
                 <>
                   {
                     items.channel === "sports" ? 
-                      <SwiperSlide>
-                      <Link href={`/sports/${items.slug}`}>
+                      <SwiperSlide key={index + 1}>
+                      <Link href={`/channel/${items.slug}`}>
                         <img src={items.img} alt='' />
                       </Link>
                       </SwiperSlide> : ""
@@ -193,8 +196,7 @@ const channel = ({data}) => {
 
         </Swiper>
    
-
-       
+      
 
         <div className='mt-5 channel_category'>
           <h2>Bangla Entertainment Channel</h2>
@@ -240,13 +242,13 @@ const channel = ({data}) => {
         >
           
           {
-            data.map((items) => {
+            data.map((items, index = 0) => {
               return (
                 <>
                   {
                     items.channel === "bangla" ? 
-                      <SwiperSlide>
-                      <Link href={`/bangla/${items.slug}`}>
+                      <SwiperSlide key={index + 1}>
+                      <Link href={`/channel/${items.slug}`}>
                         <img src={items.img} alt='' />
                       </Link>
                       </SwiperSlide> : ""
@@ -260,8 +262,6 @@ const channel = ({data}) => {
         </Swiper>
    
        
-
-        
 
         <div className='mt-5 channel_category'>
           <h2>English Entertainment Channel</h2>
@@ -305,57 +305,23 @@ const channel = ({data}) => {
           className="mySwiper"
 
         >
-        
-          <SwiperSlide>
-          <Link href="">
-            <img src='/img/PC.webp' alt='' />
-          </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
+
+          {
+            data.map((items, index = 0) => {
+              return (
+                <>
+                  {
+                    items.channel === "english" ? 
+                      <SwiperSlide key={index + 1}>
+                      <Link href={`/channel/${items.slug}`}>
+                        <img src={items.img} alt='' />
+                      </Link>
+                      </SwiperSlide> : ""
+                  }
+                </>
+              )
+            })
+          }
           
 
         </Swiper>
@@ -406,58 +372,23 @@ const channel = ({data}) => {
           className="mySwiper"
 
         >
-        
-          <SwiperSlide>
-          <Link href="">
-            <img src='/img/PC.webp' alt='' />
-          </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
           
+          {
+            data.map((items, index = 0) => {
+              return (
+                <>
+                  {
+                    items.channel === "news" ? 
+                      <SwiperSlide key={index + 1}>
+                      <Link href={`/channel/${items.slug}`}>
+                        <img src={items.img} alt='' />
+                      </Link>
+                      </SwiperSlide> : ""
+                  }
+                </>
+              )
+            })
+          }
 
         </Swiper>
    
@@ -507,57 +438,23 @@ const channel = ({data}) => {
           className="mySwiper"
 
         >
-        
-          <SwiperSlide>
-          <Link href="">
-            <img src='/img/PC.webp' alt='' />
-          </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
+
+          {
+            data.map((items, index = 0) => {
+              return (
+                <>
+                  {
+                    items.channel === "english" ? 
+                      <SwiperSlide key={index + 1}>
+                      <Link href={`/channel/${items.slug}`}>
+                        <img src={items.img} alt='' />
+                      </Link>
+                      </SwiperSlide> : ""
+                  }
+                </>
+              )
+            })
+          }
           
 
         </Swiper>
@@ -608,58 +505,23 @@ const channel = ({data}) => {
           className="mySwiper"
 
         >
-        
-          <SwiperSlide>
-          <Link href="">
-            <img src='/img/PC.webp' alt='' />
-          </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          <SwiperSlide>
-            <Link href="">
-              <img src='/img/PC.webp' alt='' />
-            </Link>
-          </SwiperSlide>
-          
+
+          {
+            data.map((items, index = 0) => {
+              return (
+                <>
+                  {
+                    items.channel === "bangla" ? 
+                      <SwiperSlide key={index + 1}>
+                      <Link href={`/channel/${items.slug}`}>
+                        <img src={items.img} alt='' />
+                      </Link>
+                      </SwiperSlide> : ""
+                  }
+                </>
+              )
+            })
+          }
 
         </Swiper>
    
@@ -713,52 +575,52 @@ const channel = ({data}) => {
           
             <SwiperSlide>
             <Link href="">
-              <img src='/img/PC.webp' alt='' />
+              <img src='/img/Sister/1.jpg' alt='' />
             </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link href="">
-                <img src='/img/PC.webp' alt='' />
+                <img src='/img/Sister/2.jpg' alt='' />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link href="">
-                <img src='/img/PC.webp' alt='' />
+                <img src='/img/Sister/3.jpg' alt='' />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link href="">
-                <img src='/img/PC.webp' alt='' />
+                <img src='/img/Sister/4.jpg' alt='' />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link href="">
-                <img src='/img/PC.webp' alt='' />
+                <img src='/img/Sister/5.jpg' alt='' />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link href="">
-                <img src='/img/PC.webp' alt='' />
+                <img src='/img/Sister/6.jpg' alt='' />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link href="">
-                <img src='/img/PC.webp' alt='' />
+                <img src='/img/Sister/7.jpg' alt='' />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link href="">
-                <img src='/img/PC.webp' alt='' />
+                <img src='/img/Sister/8.jpg' alt='' />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link href="">
-                <img src='/img/PC.webp' alt='' />
+                <img src='/img/Sister/9.jpg' alt='' />
               </Link>
             </SwiperSlide>
             <SwiperSlide>
               <Link href="">
-                <img src='/img/PC.webp' alt='' />
+                <img src='/img/Sister/10.jpg' alt='' />
               </Link>
             </SwiperSlide>
             

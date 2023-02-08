@@ -485,13 +485,8 @@ a{
 
 /* Footer */
 #footer_section{
-  background-image: url("/img/footer-shaep.webp");
-  padding-bottom: 60px;
-  padding-top: 150px;
-  padding-right: 30px;
-  padding-left: 30px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #4e657c;
+  padding: 30px 30px;
 }
 #footer_section h4{
   color: #ffffff;
@@ -513,6 +508,9 @@ a{
   color: #e5ff00;
 }
 @media only screen and (min-width: 280px) and (max-width: 428px) {
+  #footer_section{
+    padding: 30px 10px;
+  }
   #footer_section h4 {
     margin-top: 20px;
   }

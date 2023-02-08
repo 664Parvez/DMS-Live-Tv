@@ -1,9 +1,9 @@
 import Head from 'next/head'
 import Link from 'next/link';
 
-import Navbar from "./Components/Navbar"
+import Navbar from "../../Components/Navbar"
 
-import Container from './Components/Container'
+import Container from '../../Components/Container'
 
 
 export default function Home({data}) {

@@ -1,11 +1,11 @@
 import Head from "next/head"
 import Link from "next/link"
-import Container from "./Components/Container"
+import Container from "../../Components/Container"
 
-import Navbar from "./Components/Navbar"
-import Footer from "./Components/Footer"
+import Navbar from "../../Components/Navbar"
+import Footer from "../../Components/Footer"
 
-import PageTitle from "./Components/Page_title"
+import PageTitle from "../../Components/Page_title"
 
 const Login = () => {
     return (

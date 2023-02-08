@@ -1,11 +1,11 @@
 import Link from "next/link"
 import Head from "next/head"
 
-import PageTitle from "./Components/Page_title"
-import Navbar from "./Components/Navbar"
-import Footer from "./Components/Footer" 
+import PageTitle from "../../Components/Page_title"
+import Navbar from "../../Components/Navbar"
+import Footer from "../../Components/Footer" 
 
-import Container from "./Components/Container"
+import Container from "../../Components/Container"
 
 const contactUs = () => {
     return (

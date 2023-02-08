@@ -1,11 +1,11 @@
 import Link from "next/link"
 import Head from "next/head"
 
-import Navbar from "./Components/Navbar"
-import Footer from "./Components/Footer"
+import Navbar from "../../Components/Navbar"
+import Footer from "../../Components/Footer"
 
-import Container from "./Components/Container"
-import PageTitle from "./Components/Page_title"
+import Container from "../../Components/Container"
+import PageTitle from "../../Components/Page_title"
 
 const forgetPassword = () => {
     return (
